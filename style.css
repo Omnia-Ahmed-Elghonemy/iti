@@ -1,0 +1,50 @@
+/* *{
+
+}
+h1{
+    color: aqua;
+    background-color: aqua;
+}
+#my-header{
+    color: brown;
+}
+.my-second-header{
+    color: blueviolet;
+}
+/* h1 , img{
+    width: 500px;
+    height: 500px;
+} */
+ /* [alt="packet"]{
+    width: 70px;
+    height: 70px;
+    border: 20px solid plum;
+ }
+ [src^="photo" ]{
+    width: 200px;
+    height: 200px;
+ }
+ [id$="span"]{
+    color: blue;
+ } */
+ /* div:hover{
+    background-color: aquamarine;
+ } */
+ /* #only-p-tag::first-line{
+    color: blue;
+ } */
+ /* div p{
+    background-color: rgb(181, 166, 166);
+ } */
+/* #main-div >div{
+    background-color: brown;
+ }
+ h2 +p{
+    background-color: rgb(190, 154, 223);
+ } */
+
+ p{
+    margin: 50px;
+    border: 5px solid green;
+    padding: 20px;
+ }

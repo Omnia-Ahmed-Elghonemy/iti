@@ -1,0 +1,156 @@
+
+body{
+    background-color: rgb(232, 219, 240);
+    width: 100%;
+  
+}
+a{
+    text-decoration: none;
+    font-size: 22px;
+    padding: 50px;
+    
+    color: rgb(141, 110, 167);
+}
+a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(62, 46, 76);
+}
+nav{
+ 
+    padding-left: 280px;
+    padding-top: 30px;
+}
+#here{
+    color: aliceblue;
+    text-decoration: underline;
+}
+.intro{
+    padding-top: 100px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.intro h2{
+     color: rgb(62, 46, 76);
+}
+.intro p{
+    line-height: 25px;
+    color: rgb(32, 3, 62);
+    text-align: justify;
+    padding: 15px;
+}
+.country{
+    background-color: aliceblue;
+     font-family: Arial, Helvetica, sans-serif;
+     padding-top: 20px;
+      color: rgb(32, 3, 62);
+    width: 100%;
+}
+.country img{
+    width: 40%;
+    height: 450px;
+    margin: 50px;
+    border-radius: 30%;
+
+}
+.imges-divs{
+     margin-top: 200px;
+     margin-left: 510px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.imges-divs img{
+   
+width: 200px;
+height: 200px;
+border-radius: 50%;
+
+}
+.imges-divs img:hover{
+    border-radius: 0%;
+}
+.des .p-des{
+    
+     font-family: Arial, Helvetica, sans-serif;
+     color: rgb(55, 41, 69);
+     padding-left: 70px;
+     padding-right: 70px;
+     text-align: center;
+}
+.des button{
+ width: 150px;
+ height: 40px;
+ border: solid;
+ background-color: rgb(118, 91, 145);
+ 
+ color: aliceblue;
+ margin-left: 550px;
+}
+.des button:hover{
+    background-color: rgb(176, 163, 188);
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.plan-img img{
+    width: 100%;
+    height: 350px;
+    margin-top: 100px;
+}
+.tips{
+    margin-top: 100px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 14px;
+     line-height: 35px;
+
+}
+.tips b{
+    font-size: 18px;
+    color: rgb(147, 130, 163);
+}
+.table-des table{
+    margin-left: 45px;
+    background-color: rgb(210, 195, 225);
+    border: 2px solid rgb(84, 84, 84);
+    font-size: 16px;
+    /* font-weight: bold; */
+    text-align: center;
+    height: 400px;
+}
+.table-des {
+    margin-top: 150px;
+}
+.table-des table th{
+    font-size: 18px;
+}
+.table-des td{
+    width: 190px;
+}
+.form-res{
+    margin-top: 100px;
+   
+}
+.form-res h2 {
+    text-align: center;
+}
+.form-res input{
+    width: 400px;
+    height: 50px;
+}
+.form-res label{
+    font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.form-res button{
+    margin-left: 150px;
+    width: 80px;
+    height: 80px;
+    font-weight: bold;
+    background-color: rgb(222, 214, 230);
+    border-radius: 50%;
+
+}
+footer{
+    margin-top: 100px;
+}
