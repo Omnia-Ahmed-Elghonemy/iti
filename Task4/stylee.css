@@ -1,0 +1,348 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+ }
+body{
+    background-color: black;
+}
+ .frist-div{
+    display: flex;
+    background-color: #333333;
+
+ }
+
+.frist-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  font-size: 16px;
+  width: 60%;
+}
+
+.frist-ul li {
+  float: left;
+}
+
+.frist-ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.frist-ul li a:hover {
+  background-color: #111111;
+}
+.frist-ul li input{
+    width: 260px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    margin-left: 150px;
+    margin-top: 13px;
+}
+.frist-ul li i{
+    position: relative;
+    right: 25px;
+}
+
+
+
+.second-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  font-size: 14px;
+  text-decoration: none;
+  width: 40%;
+  padding-left: 70px;
+}
+
+.second-ul li {
+  float: left;
+}
+
+.second-ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.second-ul li a:hover {
+  background-color: #111111;
+}
+.second-ul li i{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 100;
+   position: relative;
+   top: 16px;
+   left: 20px;
+}
+.second-ul li i:hover{
+    font-size: 20px;
+}
+
+.frist-section{
+    width: 100%;
+    height: 550px;
+    background-image: url(../imgs/4f1e939bfd1132de32fcc36eb79ecf8eb0d99c64.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    
+}
+.frist-section .buttons{
+    margin-left: 350px;
+    margin-top: 50px;
+}
+.frist-section .watch-later,.watch-now{
+    margin-left: 70px;
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    border: red solid 2px;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 16px;
+    
+}
+
+.frist-section .buttons .watch-later{
+    background-color: transparent;
+}
+.frist-section .buttons .watch-now{
+    background-color: red;
+}
+.frist-section .buttons .watch-now:hover{
+    background-color: transparent;
+}
+.frist-section .buttons .watch-later:hover{
+    background-color: red;
+}
+
+.frist-section .content{
+    width: 100%;
+     position: relative;
+     top: 60px;
+     /* left: 200px; */
+    color: aliceblue;
+}
+.frist-section .content button{
+    background-color: aliceblue;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.frist-section .content button:hover{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+}
+.frist-section .content .Action{
+    width: 60px;
+}
+.frist-section .content .Adventure{
+    width: 80px;
+}
+.frist-section .content .Science-Fiction{
+    width: 120px;
+}
+.frist-section .content i{
+    font-size: 13px;
+    padding-left: 30px;
+}
+.frist-section .pragraph{
+    padding-top: 20px;
+    width: 60%;
+    font-size: 16px;
+    
+}
+.frist-section .c1{
+width: 30px;
+height: 7px;
+border-radius: 3px;
+background-color: red;
+}
+.frist-section .circles{
+    display: flex;
+   
+  position: relative;
+  top: 90px;
+  left: 240px;
+
+}
+.frist-section .cir{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.frist-section .cir:hover{
+    width: 30px;
+height: 7px;
+border-radius: 3px;
+background-color: red;
+}
+/* .frist-section .cir:hover + .c1{
+     background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+} */
+ .imgs-div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    margin-left: 90px;
+    
+ }
+ .imgs-div .img-pragraph{
+    
+ display: flex;
+ 
+    float: left;
+ }
+ .imgs-div img{
+    width: 65px;
+    height: 100px;
+ }
+ .imgs-div img:hover{
+     width: 70px;
+    height: 110px;
+ }
+ .imgs-div .prag{
+    padding-top: 50px;
+    padding-left: 10px;
+ }
+.imgs-div p{
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    
+    
+}
+.imgs-div .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 100;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.imgs-div .circle:hover{
+    background-color: black;
+    border: solid white 2px;
+    color: aliceblue;
+   
+}
+.second-section h3{
+    padding-left: 85px;
+    color: white;
+    padding-bottom: 60px;
+}
+.third-section .head{
+    display: flex;
+   padding-top: 100px;
+   padding-right: 200px;
+   margin-left: 85px;
+    height: 300px;
+}
+.third-section h3{
+color: aliceblue;
+}
+.third-section .head p{
+    color: #5b5a5a;
+    padding-left: 810px;
+    padding-top: 6px;
+}
+.third-section .head p:hover{
+    color: white;
+}
+.third-section .head p:hover i{
+  padding-left: 10px;
+}
+.third-section .imgs{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 150px;
+}
+.imgContent{
+    position: relative;
+    bottom: 200px;
+    left: 50px;
+    color: white;
+    
+}
+.imgContent p{
+    padding-top: 20px;
+}
+.imgContent button{
+    width: 70px;
+    height: 25px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-left: 5px;
+}
+.imgContent .diff{
+    width: 55px;
+}
+.imgContent .diff2{
+    width: 60px;
+}
+.imgContent img{
+    width: 250px;
+    height: 200px;
+   
+}
+
+.imgContent button:hover{
+   
+    background-color: rgb(255, 255, 255);
+    
+    color: rgb(255, 0, 0);
+   font-weight: bold;
+}
+.imggg i{
+    z-index: 4;
+    font-size: 35px;
+    position: absolute;
+    right: 110px;
+    top: 90px;
+}
+.imggg i:hover{
+   
+    font-size: 40px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: red;
+    
+}
+
