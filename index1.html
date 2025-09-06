@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style6.css">
+    
+    <title>Document</title>
+    <style>
+        #bulb{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button onclick="increaseCount()">Click me</button>
+    <h1 id="hello">Hello World!</h1>
+    <p id="c"> count: 0</p>
+
+    <button onclick="color()">lick me</button>
+    <h2 id="clo">Hello from clolors ex</h2>
+
+<p id="bulb">
+    Lights 
+</p>
+<button onclick="turnon()">Turn on</button>
+<button onclick="turnoff()">Turn off</button> -->
+
+<!-- <p id="sec">sur</p>
+ <button onclick="change()">Click me</button> -->
+
+<h2 id="clock"></h2>
+<!-- <script src="frist.js"></script> -->
+ <script>
+    // let c=0;
+    // function increaseCount(){
+    //     c++;
+    //     document.getElementById("c").innerText="count"+c;
+    // }
+
+    // function color(){
+    //     let co=["red","blue","green"];
+    //     let rand=co[1];
+
+       
+        
+    //     const myh=document.getElementById("clo");
+    //     myh.style.backgroundColor=rand;
+    // }
+
+    // function turnon(){
+    //     document.getElementById("bulb").style.backgroundColor="yellow";
+
+    // }
+    // function turnoff(){
+    //     document.getElementById("bulb").style.backgroundColor="white";
+        
+    // }
+
+    // function change(){
+    //     let sec =document.getElementById("sec");
+
+    //     if(sec.style.display==="none"){
+    //         sec.style.display="block";
+    //     }else{
+    //         sec.style.display="none";
+    //     }
+    // }
+
+    // const today=new Date();
+    // console.log(today.getDate);
+    // console.log(today.getFullYear);
+    // console.log(today.getDay);
+
+    function updateClo(){
+        let now =new Date();
+        document.getElementById("clock").innerText=now.toLocaleTimeString();
+    }
+    setInterval(updateClo,1000);
+
+    
+    </script>
+</body>
+</html>
