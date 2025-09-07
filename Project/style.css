@@ -1,0 +1,266 @@
+:root {
+  --bg: #0f172a; /* Custom property: default page background color (slate-900) */
+  --surface: #111827; /* Custom property: surface color for cards/sections (gray-900) */
+  --text: #e5e7eb; /* Custom property: base text color (gray-200) */
+  --muted: #9ca3af; /* Custom property: dimmed text color (gray-400) */
+  --primary: #2563eb; /* Custom property: primary brand color (blue-600) */
+  --primary-contrast: #ffffff; /* Custom property: legible text color on primary backgrounds */
+  --ring: rgba(37, 99, 235, 0.5); /* Custom property: focus ring glow color */
+  --radius: 16px; /* Custom property: base corner radius used across UI */
+  --maxw: 1100px; /* Custom property: max readable content width */
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35); /* Custom property: soft elevated shadow */
+  --gap: 1rem; /* Custom property: consistent spacing token */
+  --transition: 200ms ease; /* Custom property: global transition timing */
+   --form-bg: #111827;
+  
+}
+
+/* Light theme overrides applied by adding .theme-light to <body> */
+body.theme-light {
+  --bg: #f8fafc; /* Light mode page background (slate-50) */
+  --surface: #ffffff; /* Light mode surface color (white) */
+  --text: #0b1220; /* Light mode text color (near black) */
+  --muted: #475569; /* Light mode muted text */
+  --primary: #2563eb; /* Keep same brand color across themes */
+  --ring: rgba(
+    37,
+    99,
+    235,
+    0.35
+  ); /* Slightly lighter focus ring in light theme */
+  --shadow: 0 12px 24px rgba(2, 6, 23, 0.08); /* Softer shadow in light theme */
+}
+
+/* Global Reset Styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+ background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+body.theme-light {
+  --form-bg: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.actions .con{
+    width: 125px;
+    height: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  position: sticky;
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  top: 0;
+  z-index: 50;
+  background-color: var(--primary-contrast);
+  border-bottom: 1px solid black;
+  padding: 0 20px;
+      box-shadow: var(--shadow);
+   background-color: var(--form-bg);
+}
+
+.nav {
+  align-items: center;
+  gap: var(--gap);
+  padding: 0.75rem 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.brand_logo {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: #2563eb;
+  box-shadow: var(--shadow);
+  margin-right: 10px;
+}
+
+.actions {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  float: right;
+  clear: auto;
+  margin-top: 0;
+}
+
+.btn {
+  appearance: none;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+  background: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform var(--transition),
+    box-shadow var(--transition) filter var(--transition);
+  box-shadow: 0 6px 10px var(--muted);
+  user-select: none;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px var(--muted);
+}
+
+.btn.outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid currentColor;
+}
+
+main {
+  flex: 1;
+  
+}
+.back-g{
+background-color: var(--form-bg);
+}
+
+.hero {
+  padding: 4rem 0 2.5rem;
+  display: grid;
+  grid-template-columns: 500px 400px;
+  align-items: center;
+  gap: 2rem;
+  
+
+}
+.hero-visual img{
+    width: 150px;
+    height: 150px;
+}
+.hero-visual{
+    text-align: right; 
+}
+.hero-text{
+    text-align: left;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+
+.hero p {
+  margin: 1rem 0 2rem;
+  color: var(--muted);
+  max-width: 60ch;
+}
+.hero-text .actions {
+    margin-right: 240px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 5px;
+  padding: 2rem 0;
+}
+
+.card {
+  background: var(--surface);
+ 
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  transition: translate var(--transition) border-color var(--transition);
+  translate: 0 0;
+}
+.wh{
+    color: #f8fafc;
+}
+
+.card:hover {
+   
+  border-color: var(--primary);
+  translate: 0 -4px;
+
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 20px;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.panel{
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 1100px;
+    height: 400px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+   background-color: var(--form-bg);
+}
+.panel p{
+    color: #8d8c8c;
+    font-size: 14px;
+}
+.panel input{
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+    border: #c9c9c9 1px solid;
+    padding: 10px;
+}
+.panel label{
+    font-weight: bold;
+}
+.panel button{
+    width: 100%;
+    color: #f8fafc;
+    font-size: 13px;
+}
+footer{
+      color: #8d8c8c;
+}
